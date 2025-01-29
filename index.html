@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <button
+      class="theme-switch"
+      onclick="toggleTheme()"
+      id="themeToggle"
+      aria-label="Toggle Theme"
+    >
+      <i class="fas fa-moon"></i>
+    </button>
+    <div class="container">
+      <div class="left-column">
+        <img
+          src="./images/Profile-image.jpeg"
+          alt="Profile Picture"
+          class="profile-image"
+          data-testid="profilePicture"
+        />
+        <h1 class="name" data-testid="fullName">Abdulrasaq Zainab</h1>
+        <h2 class="job-title" data-testid="jobTitle">Frontend Developer</h2>
+        <div class="location-info" data-testid="currentLocation">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Kwara,
+          Nigeria
+        </div>
+        <div class="email-info" data-testid="emailAddress">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:abdulrasaqzainab76@gmail.com"
+            >abdulrasaqzainab76@gmail.com</a
+          >
+        </div>
+        <div class="time-badge" data-testid="currentTimeUTC" id="utcTime">
+          <i class="fas fa-clock" aria-hidden="true"></i> Loading time...
+        </div>
+      </div>
+      <div class="right-column">
+        <p class="bio" data-testid="shortBio">
+          Passionate frontend developer dedicated to crafting visually stunning,
+          accessible, and high-performance web applications. Skilled in building
+          responsive user interfaces with modern technologies and best
+          practices, ensuring seamless experiences across devices. A strong
+          advocate for clean, maintainable code and intuitive design, constantly
+          exploring new tools and frameworks to enhance efficiency. Driven by a
+          love for problem-solving and innovation, I thrive on challenges that
+          push the boundaries of web development. Always eager to learn,
+          collaborate, and contribute to projects that create meaningful digital
+          experiences.
+        </p>
+        <div class="social-links" data-testid="socialLinks">
+          <a
+            href="https://github.com/Zeey76"
+            class="github"
+            target="_blank"
+            title="GitHub"
+            aria-label="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abdulrasaq-zainab-048a1931b"
+            class="linkedin"
+            target="_blank"
+            title="LinkedIn"
+            aria-label="LinkedIn Profile"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://x.com/__zaynie__?s=21"
+            class="twitter"
+            target="_blank"
+            title="Twitter"
+            aria-label="Twitter Profile"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./java.js"></script>
+  </body>
+</html>
