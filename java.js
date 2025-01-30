@@ -1,4 +1,4 @@
-function toggleTheme() {
+const toggleTheme = () => {
   const body = document.documentElement;
   const icon = document.querySelector("#themeToggle i");
 
@@ -11,7 +11,7 @@ function toggleTheme() {
     icon.className = "fas fa-sun";
     localStorage.setItem("theme", "dark"); // Save theme as 'dark'
   }
-}
+};
 
 // Initialize theme icon based on system preference or saved theme
 const savedTheme = localStorage.getItem("theme");
@@ -32,12 +32,12 @@ if (savedTheme) {
 }
 
 // UTC Time Update
-function updateUTCTime() {
+const updateUTCTime = () => {
   const timeElement = document.getElementById("utcTime");
   const now = new Date();
   const utcTimeString = now.toUTCString();
   timeElement.innerHTML = `<i class="fas fa-clock"></i> ${utcTimeString}`;
-}
+};
 
 updateUTCTime();
 setInterval(updateUTCTime, 1000);
